@@ -11,6 +11,12 @@ public class Human {
         this.health = 100;
     }
 
+    public void attack(Human target) {
+        target.health -= this.strength;
+    }
 
+    public void display(){
+        System.out.printf("Strength: %d%n Stealth: %d%n Intelligence: %d%n Health: %d%n", this.strength, this.stealth, this.intelligence, this.health);
+    }
 
 }
